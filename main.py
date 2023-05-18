@@ -207,7 +207,7 @@ if selected == "Exploratory data analysis":
     st.plotly_chart(fig)
     st.markdown("* Information technology is the highest")
     st.header("correlation")
-    fig = px.imshow(new_data.corr(),text_auto=True,aspect="auto")
+    fig = px.imshow(new_data['Price','Price/Earnings','Dividend Yield','Earnings/Share','Market Cap','EBITDA','Price/Sales','Price/Book'].corr(),text_auto=True,aspect="auto")
     st.plotly_chart(fig)
 if selected == "Modeling":
     st.title(f"{selected}") 
